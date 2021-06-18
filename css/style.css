@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --cor1: #2D76FB;
+    --cor2: white;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo-section{
+    color: var(--cor1);
+    /* text-align: center; */
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+/* ---------------------------- Config NavBar ---------------------------- */
+nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    /* max-width: 1200px; */
+    width: 100%;
+    margin: auto;
+    z-index: 1;
+    background-color: #2d75fb0c;
+}
+
+nav div#logo{
+    display: flex;
+    width: 250px;
+    margin-left: 60px;
+}
+nav div#logo p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 50px;
+    position: relative;
+    color: var(--cor2);
+}
+
+nav div#logo p::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 29px;
+    right: -5px;
+    background-color: var(--cor1);
+}
+
+nav div#logo small{
+    margin-left: 60px;
+    position: relative;
+    line-height: 55px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+nav div#logo small::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 25px;
+    border-radius: 50%;
+    inset: 15px -20px;
+    background-color: var(--cor1);
+}
+
+nav ul{
+    display: inline;
+    line-height: 55px;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: var(--cor2);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    z-index: 3;
+}
+
+nav a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    inset: 0 0 0 0;
+    background-color:var(--cor1);
+    transition: transform .3s ease;
+    transform: scaleX(0);
+    transform-origin: top left;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: top left;
+}
+
+nav input{
+    display: none;
+}
+
+nav label{
+    display: none;
+    color: var(--cor1);
+    font-size: 30px;
+    line-height: 50px;
+    margin-right: 20px;
+}
+
+/* ---------------------------- Config Header ---------------------------- */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: url("../assets/backgrond.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+header div#text-principal{
+    text-align: center;
+    
+}
+
+header div#text-principal h1{
+    font-size: 3.3rem;
+    font-weight: 500;
+    position:relative;
+}
+
+header div#text-principal h1::before{
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 42px;
+    right: 228px;
+    background-color: var(--cor1);
+}
+
+header div#text-principal p{
+    font-weight: 100;
+    font-size: 3rem;
+    margin: 0  0 20px 0;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px #00000065;
+}
+
+header div#text-principal p span{
+    color: var(--cor1);
+}
+
+header div#text-principal small{
+    margin-top: 1000px;
+    position: relative;
+}
+
+header div#text-principal small::after, header div#text-principal small::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 1px;
+    top: 7px;
+    right: 230px;
+    background: var(--cor1);
+}
+
+div#text-principal small::before{
+    left: 230px;
+}
+
+div#icones-sociais{
+    position: relative;
+    top: 20%;
+}
+
+div#icones-sociais img{
+    margin: 0 7px;
+}
+
+div#icones-sociais img:hover{
+    filter: invert();
+}
+
+/* ---------------------------- Config Features ---------------------------- */
+main section#features{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    padding: 100px 0 0 0;
+}
+
+main section#features label{
+    position: relative;
+    color: #a5a5a5;
+}
+
+main section#features label::after, main section#features label::before{
+   position: absolute;
+   content: "";
+   width: 100px;
+   height: 1px;
+   top: 8px;
+   right: 25px;
+   background-color: #a5a5a5;
+}
+
+main section#features label::before{
+    left: 25px;
+}
+
+main section#features div#cards-feat{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: space-around;
+}
+
+main section#features div#cards-feat div.card-feat{
+    max-width: 500px;
+    margin-bottom: 100px;
+    padding-left: 10px;
+}
+
+div.card-feat div.titulo-feat{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+div.card-feat img{
+
+}
+
+div.card-feat h3.feat-h3{
+    margin-left: 10px;
+    font-weight: 500; 
+
+}
+
+div.card-feat .feat-p{
+    line-height: 25px;
+    margin-left: 45px;
+    /* color: #a5a5a5; */
+}
+
+/* ---------------------------- Config Outros ---------------------------- */
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* ---------------------------- Config Mobile ---------------------------- */
+@media only screen and (max-width:850px) {
+    
+    header{
+        height: 92.7vh;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    nav div#logo{
+        margin-left: 25px;
+    }
+
+    nav label {
+        display: block;
+    }
+
+    input#checkbox:checked ~ ul.collapsed {
+        right: -20px;
+    }
+
+    ul.collapsed {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 50px;
+        right: -5000px;
+        line-height: 20px;
+        transition: all .6s;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.623);
+    }
+
+    nav ul li {
+        margin: 40px 0 0 0;
+        font-size: 1.5rem;
+    }
+    nav ul a {
+        margin: 20px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    nav a:before {
+        height: 3px;
+        inset: 20px 0 0 0;
+    }
+}
