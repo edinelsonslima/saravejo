@@ -17,6 +17,8 @@
 body{
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+    max-width: 2000px;
+    margin: auto;
 }
 
 .titulo-section{
@@ -27,12 +29,32 @@ body{
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+
+label.heart-titulo{
+    position: relative;
+    color: #a5a5a5;
+}
+
+label.heart-titulo::after, label.heart-titulo::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 1px;
+    top: 8px;
+    right: 25px;
+    background-color: #838383;
+ }
+ 
+ label.heart-titulo::before{
+     left: 25px;
+ }
+
 /* ---------------------------- Config NavBar ---------------------------- */
 nav{
     display: flex;
     position: fixed;
-    justify-content: space-evenly;
-    /* max-width: 1200px; */
+    justify-content: space-between;
+    max-width: 2000px;
     width: 100%;
     margin: auto;
     z-index: 1;
@@ -138,7 +160,7 @@ header{
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    background: url("../assets/backgrond.png");
+    background: url("https://cdn.discordapp.com/attachments/854958362727153744/854958852046192660/backgrond-navbar1.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -204,6 +226,7 @@ div#icones-sociais{
 
 div#icones-sociais img{
     margin: 0 7px;
+    cursor: pointer;
 }
 
 div#icones-sociais img:hover{
@@ -219,46 +242,23 @@ main section#features{
     padding: 100px 0 0 0;
 }
 
-main section#features label{
-    position: relative;
-    color: #a5a5a5;
-}
-
-main section#features label::after, main section#features label::before{
-   position: absolute;
-   content: "";
-   width: 100px;
-   height: 1px;
-   top: 8px;
-   right: 25px;
-   background-color: #a5a5a5;
-}
-
-main section#features label::before{
-    left: 25px;
-}
-
 main section#features div#cards-feat{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 70px;
+    margin: 90px 0;
     justify-content: space-around;
 }
 
 main section#features div#cards-feat div.card-feat{
-    max-width: 500px;
+    max-width: 450px;
     margin-bottom: 100px;
-    padding-left: 10px;
+    padding: 10px;
 }
 
 div.card-feat div.titulo-feat{
     display: flex;
     margin-bottom: 10px;
-}
-
-div.card-feat img{
-
 }
 
 div.card-feat h3.feat-h3{
@@ -271,6 +271,440 @@ div.card-feat .feat-p{
     line-height: 25px;
     margin-left: 45px;
     /* color: #a5a5a5; */
+}
+
+/* ---------------------------- Config Smartphone ---------------------------- */
+main section#smartphone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 110px;
+}
+
+main section#smartphone p#titulo-p{
+    text-align: center;
+    margin-bottom: 140px;
+    line-height: 35px;
+    max-width: 1000px;
+}
+
+main section#smartphone div#smart-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 2000px;
+    width: 100%;
+}
+
+
+
+div#smart-cards div#img-iphone{
+    /* max-width: 450px;
+    max-height: 900px; */
+    /* height: 100%; */
+    width: 25%;
+    margin-top: -30px;
+}
+
+div#smart-cards div#img-iphone img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+div.accusan-timar{
+    max-width: 400px;
+    margin: 0 50px 30px 50px;
+    padding: 20px;
+}
+
+div.accusan-timar:hover{
+    background: #ffff002d;
+}
+
+div.smart-titulo{
+    display: flex;
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+div.smart-titulo h3{
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+div.accusan-timar p{
+    margin-left: 50px;
+}
+
+/* ---------------------------- Config Works ---------------------------- */
+main section#works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 120px 0 0 0;
+}
+
+div.titulo-inicial{
+    max-width: 1000px;
+    text-align: center;
+}
+
+div.titulo-inicial p{
+    line-height: 25px;
+    margin-top: 50px;
+    /* font-weight: 200; */
+}
+
+section#works ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 80px 0;
+}
+
+section#works ul li{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0;
+}
+
+section#works ul li a{
+    padding: 8px 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin:  0 25px;
+}
+
+section#works ul li a:hover{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border-radius: 5px;
+}
+
+/* ---------------------------- Config Thumbs ---------------------------- */
+section#thumbs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.img-thumb{
+    width: 25%;
+    max-height: 200px;
+    position: relative;
+}
+
+div.img-thumb img{
+    width: 100%;
+    height: 100%;
+}
+
+div.img-thumb div.thumb-hover{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--cor2);
+    background-color: #2d75fbcb;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+div.img-thumb:hover div.thumb-hover{
+    visibility: visible;
+}
+
+/* ---------------------------- Config Meet Our Team ---------------------------- */
+section#meet-our-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+div#team{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+div#team figure{
+    margin: 10px 20px 0;
+    max-width: 220px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+div#team figure img{
+    width: 100%;
+}
+
+div#team figure figcaption{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+div#team figure small{
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: .7em;
+}
+
+div#team figure:hover div.hover-team{
+    visibility: visible;
+}
+
+div#team figure:hover figcaption{
+    color: rgb(39, 158, 45);
+}
+
+div.hover-team{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 75%;
+    background-color:#2d75fbcb ;
+    color: white;
+    visibility: hidden;
+}
+
+div.hover-team p{
+    font-size: .8em;
+}
+
+div.hover-team small{
+    font-size: .7em;
+}
+
+div.hover-team a svg{
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    margin: 0 5px;
+    /* background: var(--cor1); */
+}
+
+div.icones-hover-team{
+    position: absolute;
+    max-width: 200px;
+    width: 100%;
+    bottom: 5px;
+}
+/* ---------------------------- Config Some Fun Facts ---------------------------- */
+section#some-fun-facts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding-top:70px ;
+    background: url("../assets/grand-palace-1822487_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#facts-icon{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+div#facts-icon figure{
+    text-align: center;
+    max-width: 150px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+div#facts-icon label{
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    color: var(--cor2);
+    font-size: 3rem;
+    font-weight: 100;
+    position: relative;
+}
+
+div#facts-icon label::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    top: -25px;
+    left: -30px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+div#facts-icon figure figcaption{
+    margin-top: 50px;
+    font-size: 150%;
+    color: var(--cor2);
+}
+
+div#facts-icon figure small{
+    color: var(--cor2);
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* ---------------------------- Config Let´s Discuss ---------------------------- */
+section#lets-discuss{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+div#lets-conteudo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+    max-width: 1500px;
+    width: 100%;
+}
+
+div#lets-texto{
+    max-width: 300px;
+}
+
+div#lets-texto h2{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+div#lets-texto p{
+    font-weight: 300;
+    line-height: 25px;
+}
+
+div#lets-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 0 20px;
+}
+
+div#lets-form h2{
+    margin-bottom: 20px;
+}
+
+div#lets-form form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    width:100%;
+}
+
+div#lets-form form input{
+    width: 45.8%;
+    padding: 10px 0 15px 0px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+div#lets-form form input:nth-child(1){
+    margin-right: 60px;
+}
+
+div#lets-form form input:nth-child(3){
+    width: 100%;
+}
+
+div#lets-form form button{
+    width: 150px;
+    border: none;
+    margin-top: 20px;
+    margin-right: 10px;
+    background: transparent;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+div#lets-form form button svg{
+    color: var(--cor1);
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+/* ---------------------------- Config Mapa ---------------------------- */
+
+section#mapa{
+    width: 100%;
+    height: 40vh;
+    margin-top: 100px;
+    background-color: #2d75fb0c;
+}
+
+/* ---------------------------- Config Footer ---------------------------- */
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 200;
+}
+
+footer div{
+    max-width: 250px;
+}
+
+footer div h3{
+    margin-bottom: 20px;
+}
+
+footer div p{
+    font-size: .8em;
+    line-height: 22px
+}
+
+footer div.input{
+    width: 100%;
+    border: none;
+    margin-bottom: 15px;
+}
+
+footer div.input input{
+    background-color: #000;
+    border: 2px solid #fff;
+    border-right: none;
+    padding: 8px;
+    width: 85%;
+    color: #fff;
+    outline: none;
+}
+
+footer div.input button{
+    width: calc(100% - 83%);
+    border: 2px solid #fff;
+    border-left: none;
+    background: transparent;
+    height: 35px;
+    margin-left: -10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+footer div.input button svg{
+    font-weight: 200;
+    color: #fff;
 }
 
 /* ---------------------------- Config Outros ---------------------------- */
@@ -331,5 +765,9 @@ div.card-feat .feat-p{
     nav a:before {
         height: 3px;
         inset: 20px 0 0 0;
+    }
+
+    div#smart-cards div#img-iphone{
+        display: none;
     }
 }
