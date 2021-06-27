@@ -12,6 +12,7 @@
 :root{
     --cor1: #2D76FB;
     --cor2: white;
+    --cor3: #9b9b9b;
 }
 
 body{
@@ -23,7 +24,7 @@ body{
 
 .titulo-section{
     color: var(--cor1);
-    /* text-align: center; */
+    text-align: center;
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 20px;
@@ -56,8 +57,6 @@ nav{
     justify-content: space-between;
     max-width: 2000px;
     width: 100%;
-    margin: auto;
-    z-index: 1;
     background-color: #2d75fb0c;
 }
 
@@ -163,12 +162,11 @@ header{
     background: url("https://cdn.discordapp.com/attachments/854958362727153744/854958852046192660/backgrond-navbar1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: var(--cor2);
 }
 
 header div#text-principal{
     text-align: center;
-    
 }
 
 header div#text-principal h1{
@@ -224,13 +222,15 @@ div#icones-sociais{
     top: 20%;
 }
 
-div#icones-sociais img{
+div#icones-sociais svg{
     margin: 0 7px;
     cursor: pointer;
+    font-size: 1.3em;
+    color: #9b9b9b;
 }
 
-div#icones-sociais img:hover{
-    filter: invert();
+div#icones-sociais svg:hover{
+    color: #fff;
 }
 
 /* ---------------------------- Config Features ---------------------------- */
@@ -239,7 +239,7 @@ main section#features{
     align-items: center;
     flex-direction: column;
     background-color: #f3f3f3;
-    padding: 100px 0 0 0;
+    padding: 100px 20px;
 }
 
 main section#features div#cards-feat{
@@ -247,7 +247,8 @@ main section#features div#cards-feat{
     flex-wrap: wrap;
     width: 100%;
     margin: 90px 0;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 90px;
 }
 
 main section#features div#cards-feat div.card-feat{
@@ -270,7 +271,7 @@ div.card-feat h3.feat-h3{
 div.card-feat .feat-p{
     line-height: 25px;
     margin-left: 45px;
-    /* color: #a5a5a5; */
+    color: var(--cor3);
 }
 
 /* ---------------------------- Config Smartphone ---------------------------- */
@@ -278,7 +279,7 @@ main section#smartphone{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 110px;
+    padding: 100px 20px;
 }
 
 main section#smartphone p#titulo-p{
@@ -290,25 +291,21 @@ main section#smartphone p#titulo-p{
 
 main section#smartphone div#smart-cards{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 2000px;
     width: 100%;
+    gap:100px;
 }
 
-
-
 div#smart-cards div#img-iphone{
-    /* max-width: 450px;
-    max-height: 900px; */
-    /* height: 100%; */
-    width: 25%;
     margin-top: -30px;
+    max-width: 400px ;
+    width: 100%;
 }
 
 div#smart-cards div#img-iphone img{
+    height: 100%;
     width: 100%;
-    /* height: 100%; */
 }
 
 div.accusan-timar{
@@ -324,7 +321,11 @@ div.accusan-timar:hover{
 div.smart-titulo{
     display: flex;
     margin-bottom: 10px;
-    height: 20px;
+}
+
+div.smart-titulo svg{
+    color: var(--cor3);
+    font-size: 1.2em;
 }
 
 div.smart-titulo h3{
@@ -333,7 +334,7 @@ div.smart-titulo h3{
 }
 
 div.accusan-timar p{
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 /* ---------------------------- Config Works ---------------------------- */
@@ -341,8 +342,7 @@ main section#works{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 120px 0 0 0;
+    padding: 100px 20px;
 }
 
 div.titulo-inicial{
@@ -353,7 +353,6 @@ div.titulo-inicial{
 div.titulo-inicial p{
     line-height: 25px;
     margin-top: 50px;
-    /* font-weight: 200; */
 }
 
 section#works ul{
@@ -423,27 +422,29 @@ section#meet-our-team{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding: 100px 20px;
 }
 
 div#team{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    gap: 40px;
     margin-top: 100px;
     width: 100%;
 }
 
 div#team figure{
-    margin: 10px 20px 0;
-    max-width: 220px;
+    max-width: 400px;
     width: 100%;
     text-align: center;
     position: relative;
+    margin-top: 50px;
 }
 
 div#team figure img{
     width: 100%;
+    height: 100%;
 }
 
 div#team figure figcaption{
@@ -571,14 +572,17 @@ section#lets-discuss{
 
 div#lets-conteudo{
     display: flex;
-    justify-content: space-around;
-    margin-top: 90px;
-    max-width: 1500px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1600px;
     width: 100%;
+    padding: 0 20px;
+    margin-top: 90px;
 }
 
 div#lets-texto{
     max-width: 300px;
+    margin-bottom: 60px;
 }
 
 div#lets-texto h2{
@@ -591,11 +595,27 @@ div#lets-texto p{
     line-height: 25px;
 }
 
+div.form-icons-container{
+    display: flex;
+}
+
 div#lets-form{
     display: flex;
     flex-direction: column;
     margin-left: 20px;
     padding: 0 20px;
+}
+
+div.form-name{
+    max-width: 420px;
+    width: 100%;
+    padding: 0 15px 0 0;
+}
+
+div.form-email{
+    max-width: 420px;
+    width: 100%;
+    padding: 0 0 0 15px;
 }
 
 div#lets-form h2{
@@ -611,7 +631,7 @@ div#lets-form form{
 }
 
 div#lets-form form input{
-    width: 45.8%;
+    width: 100%;
     padding: 10px 0 15px 0px;
     margin-top: 15px;
     border: none;
@@ -643,6 +663,13 @@ div#lets-form form button svg{
     font-size: 1.1em;
 }
 
+div.icones-discuss{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: var(--cor3);
+}
 /* ---------------------------- Config Mapa ---------------------------- */
 
 section#mapa{
@@ -656,14 +683,16 @@ section#mapa{
 footer{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-top: 50px;
     background-color: #000;
     color: #fff;
     font-weight: 200;
 }
 
-footer div{
+footer .sarajevo, .subscribe, .explore{
     max-width: 250px;
+    margin: 20px 20px;
 }
 
 footer div h3{
@@ -705,6 +734,15 @@ footer div.input button{
 footer div.input button svg{
     font-weight: 200;
     color: #fff;
+}
+
+div.explore-ul{
+    display: flex;
+    gap: 20px;
+}
+
+footer div ul{
+    list-style: none;
 }
 
 /* ---------------------------- Config Outros ---------------------------- */
