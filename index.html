@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
     <title>Sarajevo</title>
 </head>
@@ -22,17 +23,19 @@
             <i class="fas fa-bars"></i>
         </label>
         <ul class="collapsed">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#meet-our-team">Team</a></li>
+            <li><a href="#lets-discuss">Contact</a></li>
         </ul>
     </nav>
 
-    <header>
+    <header id="home">
         <div id="text-principal">
-            <h1>sarajevo</h1>
+            <div>
+                <h1>sarajevo</h1>
+            </div>
             <p><span>/creative</span> one page template.</p>
             <small>We are a team of professionals</small>
         </div>
@@ -52,7 +55,7 @@
             <div id="cards-feat">
                 <div class="card-feat" id="branding">
                     <div class="titulo-feat">
-                        <img src="./assets/icon-1.png" alt="icon-1">
+                        <img src="https://cdn.discordapp.com/attachments/854958362727153744/854958700061130762/icon-1.png" alt="icon-1">
                         <h3 class="feat-h3">Branding</h3>
                     </div>
                     <p class="feat-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora provident
@@ -62,7 +65,7 @@
 
                 <div class="card-feat" id="development">
                     <div class="titulo-feat">
-                        <img src="./assets/icon-2.png" alt="icon-2">
+                        <img src="https://cdn.discordapp.com/attachments/854958362727153744/854958701147324436/icon-2.png" alt="icon-2">
                         <h3 class="feat-h3">Development</h3>
                     </div>
                     <p class="feat-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora provident
@@ -72,7 +75,7 @@
 
                 <div class="card-feat" id="consulting">
                     <div class="titulo-feat">
-                        <img src="./assets/icon-3.png" alt="icon-3">
+                        <img src="https://cdn.discordapp.com/attachments/854958362727153744/854958702524104724/icon-3.png" alt="icon-3">
                         <h3 class="feat-h3">Consulting</h3>
                     </div>
                     <p class="feat-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora provident
@@ -410,7 +413,7 @@
         <div class="subscribe">
             <h3>Subscribe</h3>
             <div class="input">
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="emailSub">
                 <button type="submit"><i class="fas fa-arrow-right"></i></button>
             </div>
             <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos</small>
@@ -435,8 +438,8 @@
     </footer>
 
     <script src="js/index.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlGBz0yf1HitSTan-LU2KGZmWuI5QkMeg&callback=initMap"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlGBz0yf1HitSTan-LU2KGZmWuI5QkMeg&callback=initMap&libraries=&v=weekly" async></script>
 </body>
 
 </html>

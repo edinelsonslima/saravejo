@@ -1,0 +1,102 @@
+@media only screen and (max-width:850px) {
+    
+    header{
+        height: 92.7vh;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    nav div#logo{
+        margin-left: 25px;
+    }
+
+    nav label {
+        display: block;
+    }
+
+    input#checkbox:checked ~ ul.collapsed {
+        right: -20px;
+    }
+
+    ul.collapsed {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 50px;
+        right: -5000px;
+        line-height: 20px;
+        transition: ease-in-out .2s;
+        z-index: 1;
+        background-color: rgb(43, 43, 43);
+    }
+
+    nav ul li {
+        margin: 40px 0 0 0;
+        font-size: 1.5rem;
+    }
+    nav ul a {
+        margin: 20px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    nav a:before {
+        height: 3px;
+        inset: 20px 0 0 0;
+    }
+
+    div#smart-cards div#img-iphone{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1407px){
+    div#smart-cards div#img-iphone{
+        display: none;
+    }
+
+   
+}
+
+@media only screen and (max-width:765px){
+    main section#smartphone div#smart-cards{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:502px){
+    div.accusan-timar{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width:1299px){
+    div.form-name, div.form-email{
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width:773px){
+    div#lets-conteudo{
+        flex-wrap: wrap;
+    }
+
+    div#lets-texto{
+        text-align: center;
+        max-width:100%;
+    }
+}
+
+@media only screen and (max-width:318px){
+    nav div#logo small{display:none}
+}
