@@ -11,7 +11,7 @@
     input#checkbox:checked ~ ul.collapsed {
         right: -20px;
     }
-
+    
     ul.collapsed {
         display:flex;
         flex-direction: column;
@@ -22,8 +22,8 @@
         top: 50px;
         right: -5000px;
         line-height: 20px;
-        transition: ease-in-out .2s;
         z-index: 1;
+        transition: all .5s;
         background-color: rgb(43, 43, 43);
     }
 

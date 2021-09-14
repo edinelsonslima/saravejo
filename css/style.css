@@ -15,6 +15,14 @@
     --cor3: #9b9b9b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+ 
+:target {
+  scroll-margin-top: .8em;
+}
+
 body{
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
