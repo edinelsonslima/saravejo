@@ -55,7 +55,8 @@
             <div id="cards-feat">
                 <div class="card-feat" id="branding">
                     <div class="titulo-feat">
-                        <img src="https://cdn.discordapp.com/attachments/854958362727153744/854958700061130762/icon-1.png" alt="icon-1">
+                        <img src="https://cdn.discordapp.com/attachments/854958362727153744/854958700061130762/icon-1.png"
+                            alt="icon-1">
                         <h3 class="feat-h3">Branding</h3>
                     </div>
                     <p class="feat-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora provident
@@ -65,7 +66,8 @@
 
                 <div class="card-feat" id="development">
                     <div class="titulo-feat">
-                        <img src="https://cdn.discordapp.com/attachments/854958362727153744/854958701147324436/icon-2.png" alt="icon-2">
+                        <img src="https://cdn.discordapp.com/attachments/854958362727153744/854958701147324436/icon-2.png"
+                            alt="icon-2">
                         <h3 class="feat-h3">Development</h3>
                     </div>
                     <p class="feat-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora provident
@@ -75,7 +77,8 @@
 
                 <div class="card-feat" id="consulting">
                     <div class="titulo-feat">
-                        <img src="https://cdn.discordapp.com/attachments/854958362727153744/854958702524104724/icon-3.png" alt="icon-3">
+                        <img src="https://cdn.discordapp.com/attachments/854958362727153744/854958702524104724/icon-3.png"
+                            alt="icon-3">
                         <h3 class="feat-h3">Consulting</h3>
                     </div>
                     <p class="feat-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora provident
@@ -402,9 +405,19 @@
                 </div>
             </div>
         </section>
-        <section id="mapa"></section>
+
+        <iframe
+            id="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5007409612986!2d-47.48526132472713!3d-23.514485778832068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a63d957220d%3A0x908696de2d99208a!2sEduzz!5e0!3m2!1spt-BR!2sbr!4v1701701125738!5m2!1spt-BR!2sbr"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
+
+    <div id="elements"></div>
+
     <footer>
+
+
         <div class="sarajevo">
             <h3>sarajevo</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit perferendis magnam culpa inventore
@@ -437,9 +450,26 @@
         </div>
     </footer>
 
+    <script src="https://cdn.testzz.ninja/sun/bridge/bridge.js"></script>
+    <script>
+        (function () {
+            const load = function () {
+                window.Eduzz.Checkout.init({
+                    contentId: 1732561,
+                    target: "elements",
+                    errorCover: false
+                });
+            }
+            if (document.readyState === 'complete') {
+                load();
+                return;
+            }
+            window.addEventListener('load', load);
+        })();
+    </script>
+
     <script src="js/index.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlGBz0yf1HitSTan-LU2KGZmWuI5QkMeg&callback=initMap&libraries=&v=weekly" async></script>
 </body>
 
 </html>
