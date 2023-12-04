@@ -2,35 +2,35 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 
-:root{
+:root {
     --cor1: #2D76FB;
     --cor2: white;
     --cor3: #9b9b9b;
 }
 
 html {
-  scroll-behavior: smooth;
-}
- 
-:target {
-  scroll-margin-top: .8em;
+    scroll-behavior: smooth;
 }
 
-body{
+:target {
+    scroll-margin-top: .8em;
+}
+
+body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     max-width: 2000px;
     margin: auto;
 }
 
-.titulo-section{
+.titulo-section {
     color: var(--cor1);
     text-align: center;
     font-size: 2rem;
@@ -39,12 +39,13 @@ body{
     text-transform: uppercase;
 }
 
-label.heart-titulo{
+label.heart-titulo {
     position: relative;
     color: #a5a5a5;
 }
 
-label.heart-titulo::after, label.heart-titulo::before{
+label.heart-titulo::after,
+label.heart-titulo::before {
     position: absolute;
     content: "";
     width: 100px;
@@ -52,14 +53,14 @@ label.heart-titulo::after, label.heart-titulo::before{
     top: 8px;
     right: 25px;
     background-color: #838383;
- }
- 
- label.heart-titulo::before{
-     left: 25px;
- }
+}
+
+label.heart-titulo::before {
+    left: 25px;
+}
 
 /* ---------------------------- Config NavBar ---------------------------- */
-nav{
+nav {
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -70,12 +71,13 @@ nav{
 }
 
 
-nav div#logo{
+nav div#logo {
     display: flex;
     width: 250px;
     margin-left: 60px;
 }
-nav div#logo p{
+
+nav div#logo p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 50px;
@@ -83,7 +85,7 @@ nav div#logo p{
     color: var(--cor2);
 }
 
-nav div#logo p::before{
+nav div#logo p::before {
     position: absolute;
     content: "";
     width: 5px;
@@ -94,7 +96,7 @@ nav div#logo p::before{
     background-color: var(--cor1);
 }
 
-nav div#logo small{
+nav div#logo small {
     margin-left: 60px;
     position: relative;
     line-height: 55px;
@@ -102,7 +104,7 @@ nav div#logo small{
     color: #ffffff;
 }
 
-nav div#logo small::after{
+nav div#logo small::after {
     position: absolute;
     content: "";
     width: 1px;
@@ -112,18 +114,18 @@ nav div#logo small::after{
     background-color: var(--cor1);
 }
 
-nav ul{
+nav ul {
     display: inline;
     line-height: 55px;
     margin-right: 20px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin: 0 20px;
 }
 
-nav ul li a{
+nav ul li a {
     color: var(--cor2);
     text-decoration: none;
     display: inline-block;
@@ -139,7 +141,7 @@ nav a:before {
     position: absolute;
     height: 3px;
     inset: 0 0 0 0;
-    background-color:var(--cor1);
+    background-color: var(--cor1);
     transition: transform .3s ease;
     transform: scaleX(0);
     transform-origin: top left;
@@ -150,11 +152,11 @@ nav a:hover::before {
     transform-origin: top left;
 }
 
-nav input{
+nav input {
     display: none;
 }
 
-nav label{
+nav label {
     display: none;
     color: var(--cor1);
     font-size: 30px;
@@ -163,7 +165,7 @@ nav label{
 }
 
 /* ---------------------------- Config Header ---------------------------- */
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,24 +177,24 @@ header{
     color: var(--cor2);
 }
 
-header div#text-principal{
+header div#text-principal {
     text-align: center;
 }
 
-header div#text-principal div{
-    position:relative;
+header div#text-principal div {
+    position: relative;
     max-width: 215px;
     margin: auto;
 }
 
-header div#text-principal div h1{
+header div#text-principal div h1 {
     font-size: 3.3rem;
     font-weight: 500;
     max-width: 675px;
     width: 100%;
 }
 
-header div#text-principal div::before{
+header div#text-principal div::before {
     position: absolute;
     content: "";
     width: 7px;
@@ -203,24 +205,25 @@ header div#text-principal div::before{
     background-color: var(--cor1);
 }
 
-header div#text-principal p{
+header div#text-principal p {
     font-weight: 100;
     font-size: 3rem;
-    margin: 0  0 20px 0;
+    margin: 0 0 20px 0;
     letter-spacing: 3px;
     text-shadow: 1px 1px 1px #00000065;
 }
 
-header div#text-principal p span{
+header div#text-principal p span {
     color: var(--cor1);
 }
 
-header div#text-principal small{
+header div#text-principal small {
     margin-top: 1000px;
     position: relative;
 }
 
-header div#text-principal small::after, header div#text-principal small::before {
+header div#text-principal small::after,
+header div#text-principal small::before {
     position: absolute;
     content: "";
     width: 8vw;
@@ -230,28 +233,28 @@ header div#text-principal small::after, header div#text-principal small::before 
     background: var(--cor1);
 }
 
-div#text-principal small::before{
+div#text-principal small::before {
     left: 105%;
 }
 
-div#icones-sociais{
+div#icones-sociais {
     position: relative;
     top: 20%;
 }
 
-div#icones-sociais svg{
+div#icones-sociais svg {
     margin: 0 7px;
     cursor: pointer;
     font-size: 1.3em;
     color: #9b9b9b;
 }
 
-div#icones-sociais svg:hover{
+div#icones-sociais svg:hover {
     color: #fff;
 }
 
 /* ---------------------------- Config Features ---------------------------- */
-main section#features{
+main section#features {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -259,7 +262,7 @@ main section#features{
     padding: 100px 20px;
 }
 
-main section#features div#cards-feat{
+main section#features div#cards-feat {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -268,38 +271,38 @@ main section#features div#cards-feat{
     gap: 90px;
 }
 
-main section#features div#cards-feat div.card-feat{
+main section#features div#cards-feat div.card-feat {
     max-width: 450px;
     margin-bottom: 100px;
     padding: 10px;
 }
 
-div.card-feat div.titulo-feat{
+div.card-feat div.titulo-feat {
     display: flex;
     margin-bottom: 10px;
 }
 
-div.card-feat h3.feat-h3{
+div.card-feat h3.feat-h3 {
     margin-left: 10px;
-    font-weight: 500; 
+    font-weight: 500;
 
 }
 
-div.card-feat .feat-p{
+div.card-feat .feat-p {
     line-height: 25px;
     margin-left: 45px;
     color: var(--cor3);
 }
 
 /* ---------------------------- Config Smartphone ---------------------------- */
-main section#smartphone{
+main section#smartphone {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 0;
 }
 
-main section#smartphone p#titulo-p{
+main section#smartphone p#titulo-p {
     text-align: center;
     padding: 0 20px;
     margin-bottom: 140px;
@@ -307,70 +310,70 @@ main section#smartphone p#titulo-p{
     max-width: 1000px;
 }
 
-main section#smartphone div#smart-cards{
+main section#smartphone div#smart-cards {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap:1px;
+    gap: 1px;
 }
 
-div#smart-cards div#img-iphone{
+div#smart-cards div#img-iphone {
     margin-top: -30px;
-    max-width: 340px ;
+    max-width: 340px;
 }
 
-div#smart-cards div#img-iphone img{
+div#smart-cards div#img-iphone img {
     width: 100%;
 }
 
-div.accusan-timar{
+div.accusan-timar {
     max-width: 400px;
     margin: 0 50px 30px 50px;
     padding: 20px;
 }
 
-div.accusan-timar:hover{
+div.accusan-timar:hover {
     background: #ffff002d;
 }
 
-div.smart-titulo{
+div.smart-titulo {
     display: flex;
     margin-bottom: 10px;
 }
 
-div.smart-titulo svg{
+div.smart-titulo svg {
     color: var(--cor3);
     font-size: 1.2em;
 }
 
-div.smart-titulo h3{
+div.smart-titulo h3 {
     margin-left: 25px;
     font-weight: 500;
 }
 
-div.accusan-timar p{
+div.accusan-timar p {
     margin-left: 40px;
 }
 
 /* ---------------------------- Config Works ---------------------------- */
-main section#works{
+main section#works {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 20px;
 }
 
-div.titulo-inicial{
+div.titulo-inicial {
     max-width: 1000px;
     text-align: center;
 }
 
-div.titulo-inicial p{
+div.titulo-inicial p {
     line-height: 25px;
     margin-top: 50px;
 }
 
-section#works ul{
+section#works ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -379,43 +382,43 @@ section#works ul{
     margin: 80px 0;
 }
 
-section#works ul li{
+section#works ul li {
     display: inline-block;
     margin: 10px 0;
     padding: 0;
 }
 
-section#works ul li a{
+section#works ul li a {
     padding: 8px 15px;
     text-decoration: none;
     color: black;
     font-weight: 500;
 }
 
-section#works ul li a:hover{
+section#works ul li a:hover {
     background-color: var(--cor1);
     color: var(--cor2);
     border-radius: 5px;
 }
 
 /* ---------------------------- Config Thumbs ---------------------------- */
-section#thumbs{
+section#thumbs {
     display: flex;
     flex-wrap: wrap;
 }
 
-div.img-thumb{
+div.img-thumb {
     width: 25%;
     max-height: 200px;
     position: relative;
 }
 
-div.img-thumb img{
+div.img-thumb img {
     width: 100%;
     height: 100%;
 }
 
-div.img-thumb div.thumb-hover{
+div.img-thumb div.thumb-hover {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -428,19 +431,19 @@ div.img-thumb div.thumb-hover{
     visibility: hidden;
 }
 
-div.img-thumb:hover div.thumb-hover{
+div.img-thumb:hover div.thumb-hover {
     visibility: visible;
 }
 
 /* ---------------------------- Config Meet Our Team ---------------------------- */
-section#meet-our-team{
+section#meet-our-team {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 20px;
 }
 
-div#team{
+div#team {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -449,7 +452,7 @@ div#team{
     width: 100%;
 }
 
-div#team figure{
+div#team figure {
     max-width: 300px;
     width: 100%;
     text-align: center;
@@ -457,31 +460,31 @@ div#team figure{
     margin-top: 50px;
 }
 
-div#team figure img{
+div#team figure img {
     width: 100%;
     height: 100%;
 }
 
-div#team figure figcaption{
+div#team figure figcaption {
     margin-top: 10px;
     font-size: 1rem;
 }
 
-div#team figure small{
+div#team figure small {
     margin-top: 10px;
     font-weight: 300;
     font-size: .7em;
 }
 
-div#team figure:hover div.hover-team{
+div#team figure:hover div.hover-team {
     visibility: visible;
 }
 
-div#team figure:hover figcaption{
+div#team figure:hover figcaption {
     color: rgb(39, 158, 45);
 }
 
-div.hover-team{
+div.hover-team {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -491,20 +494,20 @@ div.hover-team{
     padding: 20px;
     width: 100%;
     height: 100%;
-    background-color:#2d75fbcb ;
+    background-color: #2d75fbcb;
     color: white;
     visibility: hidden;
 }
 
-div.hover-team p{
+div.hover-team p {
     font-size: .8em;
 }
 
-div.hover-team small{
+div.hover-team small {
     font-size: .7em;
 }
 
-div.hover-team a svg{
+div.hover-team a svg {
     background: #fff;
     border: none;
     border-radius: 5px;
@@ -513,25 +516,26 @@ div.hover-team a svg{
     /* background: var(--cor1); */
 }
 
-div.icones-hover-team{
+div.icones-hover-team {
     position: absolute;
     max-width: 200px;
     width: 100%;
     bottom: 5px;
 }
+
 /* ---------------------------- Config Some Fun Facts ---------------------------- */
-section#some-fun-facts{
+section#some-fun-facts {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
-    padding-top:70px ;
+    padding-top: 70px;
     background: url("../assets/grand-palace-1822487_1920.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-div#facts-icon{
+div#facts-icon {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
@@ -540,14 +544,14 @@ div#facts-icon{
     margin-bottom: 50px;
 }
 
-div#facts-icon figure{
+div#facts-icon figure {
     text-align: center;
     max-width: 150px;
     width: 100%;
     margin: 20px 0;
 }
 
-div#facts-icon label{
+div#facts-icon label {
     text-shadow: 1px 1px 1px black;
     text-align: center;
     color: var(--cor2);
@@ -556,7 +560,7 @@ div#facts-icon label{
     position: relative;
 }
 
-div#facts-icon label::after{
+div#facts-icon label::after {
     position: absolute;
     content: "";
     width: 100px;
@@ -567,27 +571,27 @@ div#facts-icon label::after{
     border-radius: 50%;
 }
 
-div#facts-icon figure figcaption{
+div#facts-icon figure figcaption {
     margin-top: 50px;
     font-size: 150%;
     color: var(--cor2);
 }
 
-div#facts-icon figure small{
+div#facts-icon figure small {
     color: var(--cor2);
     font-size: 1rem;
     text-shadow: 1px 1px 1px black;
 }
 
 /* ---------------------------- Config Let´s Discuss ---------------------------- */
-section#lets-discuss{
+section#lets-discuss {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     padding: 100px 20px;
 }
 
-div#lets-conteudo{
+div#lets-conteudo {
     display: flex;
     justify-content: center;
     max-width: 1600px;
@@ -596,57 +600,57 @@ div#lets-conteudo{
     margin-top: 90px;
 }
 
-div#lets-texto{
+div#lets-texto {
     max-width: 300px;
     margin-bottom: 60px;
 }
 
-div#lets-texto h2{
+div#lets-texto h2 {
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-div#lets-texto p{
+div#lets-texto p {
     font-weight: 300;
     line-height: 25px;
 }
 
-div.form-icons-container{
+div.form-icons-container {
     display: flex;
 }
 
-div#lets-form{
+div#lets-form {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
     padding: 0 20px;
 }
 
-div.form-name{
+div.form-name {
     max-width: 420px;
     width: 100%;
     padding: 0 15px 0 0;
 }
 
-div.form-email{
+div.form-email {
     max-width: 420px;
     width: 100%;
     padding: 0 0 0 15px;
 }
 
-div#lets-form h2{
+div#lets-form h2 {
     margin-bottom: 20px;
 }
 
-div#lets-form form{
+div#lets-form form {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     position: relative;
-    width:100%;
+    width: 100%;
 }
 
-div#lets-form form input{
+div#lets-form form input {
     width: 100%;
     padding: 10px 0 15px 0px;
     margin-top: 15px;
@@ -655,15 +659,15 @@ div#lets-form form input{
     border-bottom: 1px solid #ccc;
 }
 
-div#lets-form form input:nth-child(1){
+div#lets-form form input:nth-child(1) {
     margin-right: 60px;
 }
 
-div#lets-form form input:nth-child(3){
+div#lets-form form input:nth-child(3) {
     width: 100%;
 }
 
-div#lets-form form button{
+div#lets-form form button {
     width: 150px;
     border: none;
     margin-top: 20px;
@@ -673,30 +677,37 @@ div#lets-form form button{
     font-size: 1em;
 }
 
-div#lets-form form button svg{
+div#lets-form form button svg {
     color: var(--cor1);
     margin-right: 10px;
     font-size: 1.1em;
 }
 
-div.icones-discuss{
+div.icones-discuss {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
     color: var(--cor3);
 }
+
 /* ---------------------------- Config Mapa ---------------------------- */
 
-#mapa{
+#mapa {
     width: 100%;
     height: 40vh;
     margin-top: 100px;
     background-color: #2d75fb0c;
 }
 
+#elements {
+    position: relative;
+    max-width: 650px;
+    margin: 5rem auto 0;
+}
+
 /* ---------------------------- Config Footer ---------------------------- */
-footer{
+footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -706,27 +717,29 @@ footer{
     font-weight: 200;
 }
 
-footer .sarajevo, .subscribe, .explore{
+footer .sarajevo,
+.subscribe,
+.explore {
     max-width: 250px;
     margin: 20px 20px;
 }
 
-footer div h3{
+footer div h3 {
     margin-bottom: 20px;
 }
 
-footer div p{
+footer div p {
     font-size: .8em;
     line-height: 22px
 }
 
-footer div.input{
+footer div.input {
     width: 100%;
     border: none;
     margin-bottom: 15px;
 }
 
-footer div.input input{
+footer div.input input {
     background-color: #000;
     border: 2px solid #fff;
     border-right: none;
@@ -736,7 +749,7 @@ footer div.input input{
     outline: none;
 }
 
-footer div.input button{
+footer div.input button {
     width: calc(100% - 83%);
     border: 2px solid #fff;
     border-left: none;
@@ -747,21 +760,21 @@ footer div.input button{
     cursor: pointer;
 }
 
-footer div.input button svg{
+footer div.input button svg {
     font-weight: 200;
     color: #fff;
 }
 
-div.explore-ul{
+div.explore-ul {
     display: flex;
     gap: 20px;
 }
 
-footer div ul{
+footer div ul {
     list-style: none;
 }
 
 /* ---------------------------- Config Outros ---------------------------- */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
