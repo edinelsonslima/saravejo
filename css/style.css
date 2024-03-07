@@ -171,7 +171,7 @@ header {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    background: url("https://cdn.discordapp.com/attachments/757077752099897364/887756104518475796/saravejo.png?ex=65fb20cd&is=65e8abcd&hm=f2063e0f6f82d67cbd1576c11645053a5fb3a152f8033ef9743484ea532e7c0f&");
+    background: #242322;
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--cor2);
