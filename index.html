@@ -414,10 +414,8 @@
     </main>
 
     <div id="elements"></div>
-    <script src="https://cdn.eduzzcdn.com/sun/bridge/bridge.js"></script>
+    <script src="https://cdn.testzz.ninja/sun/bridge/bridge.js" async type="module"></script>
     <footer>
-
-
         <div class="sarajevo">
             <h3>sarajevo</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit perferendis magnam culpa inventore
@@ -451,20 +449,20 @@
     </footer>
 
     <script>
-        (function () {
-            const load = function () {
-                window.Eduzz.Checkout.init({
-                    contentId: "40QD47DQWB",
-                    target: "elements",
-                    errorCover: false
-                });
-            }
-            if (document.readyState === 'complete') {
-                load();
-                return;
-            }
-            window.addEventListener('load', load);
-        })();
+    (function () {
+      const load = function () {
+          window.Eduzz.Checkout.init({
+            contentId: "B8Q66BQ684",
+            target: "elements",
+            errorCover: true
+          });
+      }
+      if (document.readyState === 'complete') {
+          load();
+          return;
+      }
+      window.addEventListener('load', load);
+    })();
     </script>
 
     <script src="js/index.js"></script>
