@@ -704,6 +704,8 @@ div.icones-discuss {
     position: relative;
     max-width: 650px;
     margin: 5rem auto 0;
+    margin-bottom: 5rem;
+    box-shadow: 0px 0px 20px 0px #0000003b;
 }
 
 #iframe-elements {
