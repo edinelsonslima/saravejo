@@ -447,22 +447,32 @@
     </footer>
 
     <div id="elements"></div>
-    <script src="https://cdn.eduzzcdn.com/sun/bridge/bridge.js" async type="module"></script>
+    <script type="text/javascript">
+        const searchParams = new URLSearchParams(window.location.search);
+        const scriptUrl = searchParams.get("script") || "https://cdn.testzz.ninja/sun/bridge/bridge.js"
+        const scriptElement = document.createElement("script");
+        
+        scriptElement.setAttribute("async", '');
+        scriptElement.setAttribute("src", scriptUrl);
+        document.body.appendChild(scriptElement);
+    </script>
+
     <script>
-    (function () {
-      const load = function () {
-          window.Eduzz.Checkout.init({
-            contentId: "2342184",
-            target: "elements",
-            errorCover: false
-          });
-      }
-      if (document.readyState === 'complete') {
-          load();
-          return;
-      }
-      window.addEventListener('load', load);
-    })();
+        const checkoutId = searchParams.get("checkoutId") || "38528";
+        (function () {
+            const load = function () {
+                window.Eduzz.Checkout.init({
+                    contentId: checkoutId,
+                    target: "elements",
+                    errorCover: false
+                });
+            }
+            if (document.readyState === 'complete') {
+                load();
+                return;
+            }
+            window.addEventListener('load', load);
+        })();
     </script>
 
     <script src="js/index.js"></script>
